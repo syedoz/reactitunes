@@ -1,0 +1,118 @@
+.container2 {
+	.exists {
+		width: 22.33%;
+	    float: left;
+	    text-align: left;
+	    margin: 30px 1%;
+	    background: #f7f7f7;
+	    border: 1px solid #dadada;
+	    border-radius: 4px;
+	    overflow: hidden;
+	    padding-bottom: 10px;
+	    -webkit-box-shadow: 0px 0px 0px 3px rgb(239, 106, 108);
+	    -moz-box-shadow: 0px 0px 0px 3px rgb(239, 106, 108);
+	    box-shadow: 0px 0px 0px 3px rgb(239, 106, 108);
+	    img {width: 100%;}
+	}
+	.item {
+		width: 22.33%;
+	    float: left;
+	    text-align: left;
+	    margin: 30px 1%;
+	    background: #f7f7f7;
+	    border: 1px solid #dadada;
+	    border-radius: 4px;
+	    overflow: hidden;
+	    padding-bottom: 10px;
+	    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.08);
+	    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.08);
+	    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.08);
+	    img {width: 100%;}
+	}
+}
+
+.infoBox {
+    padding: 0px 10px;
+}
+
+.artName {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.trackName {
+    font-size: 16px;
+    color: #505050;
+    font-weight: $light;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    margin: 6px 0px;
+}
+
+.wishBtn {
+    display: block;
+    float: right;
+    background: #e29200;
+    color: #fff;
+    border: 0;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    -webkit-appearance: button;
+    &:focus {outline: 0;}
+}
+
+.playlistView {
+    background: #ff6d6d;
+    color: #fff;
+    width: 40%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 0px;
+    margin: 10px auto 0;
+    border-radius: 6px;
+    &:focus,&:hover {outline:0; text-decoration: none;}
+}
+
+@media only screen and (max-width: 768px){
+    .container2 .item{
+        width: 30.33%; margin: 30px 1.5%; border: 0;
+    }
+    .container2 .exists {width: 31%; margin: 30px 1%;}
+    .searchBar {
+        position: fixed; min-width: 90%; padding: 10px 5%; background: #fff; top: 0;
+        -webkit-box-shadow: 0px -5px 25px 4px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px -5px 25px 4px rgba(0,0,0,0.05);
+        box-shadow: 0px -5px 25px 4px rgba(0,0,0,0.05);
+    }
+    .wlist-item {width: 75%;}
+    .wlist-search {width: 62%;}
+    .playlistView {padding: 4px 0px; margin: 2px auto 0; width: 100%;}
+    .genBtn {padding: 9px 0px 8px;}
+    .genTxt {padding: 6px 2%;}
+    .genTxt.plist {background-size: 25px;}
+}
+
+@media only screen and (max-width: 500px){
+    .container2 .item {width: 45%; margin: 30px 2.5%; border: 0;}
+    .container2 .exists {width: 45%; margin: 30px 2.5%; border: 0;}
+    .genBtn {width: 25%;}
+    .genTxt {width: 70%;}
+    .wlist-item {width: 88%;}
+    .wlist-search {width: 95%; margin: 70px auto 0px;}
+    #closePlist {right: 5%; top: 2%;}
+    .genTxt.plist {padding: 12px 50px 12px 10px; width: 80%; background-size: 38px;}
+    .wlistDetail {
+        max-width: 60%;
+        .wlalbumName {font-size: 12px;}
+        .wlcntry {font-size: 12px;}
+    }
+}

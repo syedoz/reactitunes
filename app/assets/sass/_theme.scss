@@ -1,0 +1,54 @@
+body {
+	margin : 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+// import font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+.clearfix {display: block; clear: both;}
+.img-full {img{width: 100%;}}
+.alpha {padding-left: 0px;}
+.omega {padding-right: 0px;}
+.show-mobile {display: none;}
+.hide-mobile {display: block;}
+.col-center {float: none; margin: auto;}
+
+a:focus, a:hover {outline: none;}
+
+.container {max-width: 1140px; margin: 0 auto;}
+.header {font-size: 28px; text-align: center; margin: 15px 0px 30px;}
+
+.genTxt {
+	width: 78%;
+    font-size: 18px;
+    padding: 12px 2%;
+    border-radius: 6px 0px 0px 6px;
+    border: 1px solid #dedede;
+    &:focus {outline: 0;}
+    &.plist {
+        border-radius: 6px;
+        background: url(../images/search.png) #fff no-repeat 98% 3px;
+        background-size: 38px; padding-right: 60px;
+    }
+}
+.genBtn {
+	font-size: 16px;
+    padding: 15px 0px 14px;
+    width: 16%;
+    -webkit-appearance: button;
+    border: 1px;
+    border-left: 0px;
+    background: #4c4949;
+    color: #fff;
+    border-radius: 0px 6px 6px 0px;
+    &:focus {outline: 0;}
+}
+.searchBar {max-width: 50%; margin: auto;}
+
+@media only screen and (max-width: 768px){
+    .container {margin: 110px auto 0px;}
+    .header {margin: 15px 0px 0px;}
+}
